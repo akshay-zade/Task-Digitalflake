@@ -75,10 +75,12 @@
  }
  
  .sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
- }
+   display: block;
+   text-decoration: none;
+   color: #F4F4F4;
+   padding-top: 10px;
+   font-size: 24px;
+}
  
  .sidebar-nav li a:hover {
     text-decoration: none;
@@ -122,7 +124,7 @@
        padding-left: 0;
     }
     #sidebar-wrapper {
-       width: 250px;
+       width: 290px;
     }
     #wrapper.toggled #sidebar-wrapper {
        width: 250px;

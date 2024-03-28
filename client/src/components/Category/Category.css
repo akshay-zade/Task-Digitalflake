@@ -1,0 +1,35 @@
+
+.header-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.header-category h1 {
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.input-category {
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid darkgray;
+}
+.box-style {
+    /* box-sizing: border-box; */
+    /* border: 1px solid; */
+    padding: 20px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px darkgray;
+}
+.Btn-style {
+    background-color: purple ;
+    border: none;
+}
+td.button-align {
+    width: 200px;
+}

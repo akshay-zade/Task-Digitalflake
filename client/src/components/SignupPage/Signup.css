@@ -2,3 +2,15 @@
 .parent_style {
     text-align: center !important;
 }
+.style-box{
+    padding: 60px;
+}
+.parent-style {
+    background-color: #DDE0FF;
+  
+    height: 100vh;
+}
+.input-container {
+    box-shadow: 3px 3px 3px 3px lightsteelblue;
+  
+}

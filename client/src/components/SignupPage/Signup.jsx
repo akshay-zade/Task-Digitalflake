@@ -18,9 +18,11 @@ const Signup = () => {
        .catch(error => console.log(error ))
     }
   return (
-    <div className='d-flex justify-content-center align-items-center bg-secondary vh-100 img-bck '>
+    <section className=' align-items-center vh-100 parent-style  ' >
+        <div className='img-bck' ></div>
+        <div className='style-box' >
         
-        <div className='bg-white p-3 rounded w-25'>
+        <div className='bg-white p-3 rounded w-25 input-container '>
         <div className='parent_style'><img src="./logo.png" width={200} height={105} alt="logo" /></div>
           
             <form onSubmit={handleSubmit}>
@@ -72,6 +74,8 @@ const Signup = () => {
             
         </div>
     </div>
+    </section>
+    
   )
 }
 

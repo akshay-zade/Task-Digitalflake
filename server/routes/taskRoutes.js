@@ -1,15 +1,22 @@
 const { Router } = require('express')
 const { 
-    getTasks, 
-    saveTask, 
-    updateTask, 
-    deleteTask
+    getCategory,
+    saveCategory,
+    updateCategory,
+    deleteCategory,
+    getProduct,
+    saveProduct,
+    updateProduct,
+    deleteProduct
 } = require('./../controllers/taskControllers')
 const router = Router()
 
-router.get('/get', getTasks)
-router.post('/save', saveTask)
-router.put('/update/:id', updateTask)
-router.delete('/delete/:id', deleteTask)
-
+router.get('/get', getCategory)
+router.post('/save', saveCategory)
+router.put('/update/:id', updateCategory)
+router.delete('/delete/:id', deleteCategory)
+router.get('/get' , getProduct)
+router.post('/save' , saveProduct)
+router.put('/update/:id' , updateProduct)
+router.delete('/delete/:id' , deleteProduct)
 module.exports = router

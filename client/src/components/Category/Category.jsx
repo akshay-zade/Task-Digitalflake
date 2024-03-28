@@ -1,8 +1,10 @@
 import React , {useEffect , useState} from "react";
+import axios from 'axios';
 import "./Category.css";
 import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 import { useNavigate } from "react-router-dom";
+import { baseUrl } from "../../untils/constant";
 
 
 const Category = () => {
@@ -10,8 +12,45 @@ const Category = () => {
   const handleSubmit = () => {
     navigate("/categorylist");
   };
-  
 
+  const[category , setCategory] = useState([])
+  const[newCategory , setNewCategory] = useState('')
+  const [updateUI, setUpdateUI] = useState(false)
+  const [updateId, setUpdateId] = useState(null)
+
+  useEffect(()=>{
+    axios.get(`${baseUrl}/get`)
+    .then((res)=>{
+       console.log(res.data);
+       setCategory(res.data);
+    })
+  },[updateUI]);
+
+  const addCategory = () => {
+    axios.post(`${baseUrl}/save`, {task:newCategory})
+    .then((res)=>{
+       console.log(res.date);
+       setNewCategory('');
+       setUpdateUI((prevState)=>!prevState)
+    })
+  }
+
+  const updatemode = (id,text) => {
+console.log(text);
+setNewCategory(text);
+setUpdateId(id);
+  }
+
+  const updateCategory = () => {
+    axios.put(`${baseUrl}/update/${updateId}`,{task:newCategory})
+    .then((res)=>{
+     console.log(res.data);
+     setUpdateUI((prevState)=>!prevState)
+     setUpdateId(null)
+     setNewCategory('')
+    })
+  }
+  
   return (
     <div>
       <Header />
@@ -31,8 +70,6 @@ const Category = () => {
                       <input
                         type="text"
                         class="form-control"
-                       
-                       
                         placeholder="Enter Your Categoery Name"
                         required
                       />

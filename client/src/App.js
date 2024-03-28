@@ -10,6 +10,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import Home from './components/HomePage/Home';
 import Categoerylist from './components/Category/Categoerylist';
+import Productlist from './components/Product/Productlist';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/product' Component={Product} />
          <Route path='/home' Component={Home} />
          <Route path='/categorylist' Component={Categoerylist} />
+         <Route path='/productlist' Component={Productlist} />
       </Routes>
    </BrowserRouter>
   );

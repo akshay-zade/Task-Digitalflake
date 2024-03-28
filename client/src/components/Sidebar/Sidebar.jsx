@@ -24,10 +24,10 @@ const Sidebar = () => {
               <a href="/home"><span className="fa-stack fa-lg "><i className="fa fa-dashboard fa-stack-1x " /></span> Home</a>
             </li>
             <li>
-              <a href="/category"><span className="fa-stack fa-lg "><i className="fa fa-flag fa-stack-1x " /></span>Category</a>
+              <a href="/categorylist"><span className="fa-stack fa-lg "><i className="fa fa-flag fa-stack-1x " /></span>Category</a>
             </li>
             <li>
-              <a href="/product"><span className="fa-stack fa-lg "><i className="fa fa-cloud-download fa-stack-1x " /></span>Product</a>
+              <a href="/productlist"><span className="fa-stack fa-lg "><i className="fa fa-cloud-download fa-stack-1x " /></span>Product</a>
             </li>
 
           </ul>
