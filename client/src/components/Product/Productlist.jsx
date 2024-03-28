@@ -32,7 +32,7 @@ const Productlist = () => {
     <th scope="col">PACK SIZE</th>
     <th scope="col">CATEGORY</th>
     <th scope="col">MRP</th>
-    <th scope="col">IMAGE</th>
+    
     <th scope="col">STATUS</th>
     <th scope="col"></th>
   </tr>
@@ -45,7 +45,7 @@ const Productlist = () => {
     <td>5</td>
     <td>Fruit</td>
     <td>100kg</td>
-    <td><img src="" alt="" /></td>
+  
     <td>Active</td>
     <td className='button-align' >
       <button type="button" class="btn btn-primary">Update</button>
@@ -59,7 +59,7 @@ const Productlist = () => {
     <td>5</td>
     <td>Fruit</td>
     <td>100kg</td>
-    <td><img src="" alt="" /></td>
+  
     <td>Active</td>
     <td className='button-align' >
       <button type="button" class="btn btn-primary">Update</button>
@@ -73,7 +73,7 @@ const Productlist = () => {
     <td>5</td>
     <td>Fruit</td>
     <td>100kg</td>
-    <td><img src="" alt="" /></td>
+    
     <td>Active</td>
     <td className='button-align' >
       <button type="button" class="btn btn-primary">Update</button>

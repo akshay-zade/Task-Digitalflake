@@ -18,7 +18,7 @@ const Signup = () => {
        .catch(error => console.log(error ))
     }
   return (
-    <section className=' align-items-center vh-100 parent-style  ' >
+    <section className='vh-100 parent-style  ' >
         <div className='img-bck' ></div>
         <div className='style-box' >
         
