@@ -14,24 +14,18 @@ const Home = () => {
               <Sidebar />
             </div>
             <div className="col-md-10">
-               {/* <div className="img-parent">
-                <img src="./logo.png" alt="logo" className="img-style" />
-                <div className="home-heading" >
-                <h2>Welcome to Digitalflake Admin</h2>
-                </div>
-              </div> */}
               <div class="outer-container">
-   <div class="inner-container">
-     <div class="centered-content">
-     <div className="img-parent">
-                <img src="./logo.png" alt="logo" className="img-style" />
-                <div className="home-heading" >
-                <h2>Welcome to Digitalflake Admin</h2>
+                <div class="inner-container">
+                  <div class="centered-content">
+                    <div className="img-parent">
+                      <img src="./logo.png" alt="logo" className="img-style" />
+                      <div className="home-heading">
+                        <h2>Welcome to Digitalflake Admin</h2>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div> 
-     </div>
-   </div>
-</div>
+              </div>
             </div>
           </div>
         </div>
